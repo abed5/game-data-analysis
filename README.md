@@ -1,14 +1,14 @@
 # Analysis of 17-Game Soccer Pool Outcomes
 
-This Python project analyzes historical soccer pool (jackpot) outcomes from the website [soccerplatform.me](https://soccerplatform.me). It specifically focuses on evaluating the predictive performance and statistical distribution of results for 17-game soccer betting pools spanning from 2016 to 2022.
+This Python project analyzes historical game pool outcomes. It specifically focuses on evaluating the predictive performance and statistical distribution of results for 17-game betting pools spanning from 2016 to 2022.
 
-The analysis includes parsing historical data, transforming raw match outcomes into numerical insights, and visualizing patterns across hundreds of jackpots.
+The analysis includes parsing historical data, transforming raw match outcomes into numerical insights, and visualizing patterns across hundreds of outcomes.
 
 ## 📁 Project Structure
 
-* **`data_download.py`** – Downloads and parses historical jackpot tables from web pages.
+* **`data_download.py`** – Downloads and parses historical data tables from web pages.
 * **`data_analysis.py`** – Processes and analyzes downloaded results, providing statistical summaries and visualizations.
-* **`soccerplatform-mega-jackpot-history-2016-2022.txt`** – A plain text file containing URLs to pages with jackpot outcome tables (provided by the user).
+* **`game-history-2016-2022.txt`** – A plain text file containing URLs to pages with pool outcome tables (provided by the user).
 
 ---
 
@@ -17,7 +17,7 @@ The analysis includes parsing historical data, transforming raw match outcomes i
 ### Data Download
 
 * Extracts HTML tables from URLs listed in a `.txt` file.
-* Retrieves game results and predictions from each jackpot web page.
+* Retrieves game results and predictions from each web page.
 
 ### Data Analysis
 
@@ -30,14 +30,14 @@ The analysis includes parsing historical data, transforming raw match outcomes i
 
   * Frequency distribution of correct predictions.
   * Statistical summaries (mean, median, mode) for each outcome type.
-  * Distribution of common outcome ratios per jackpot (e.g., 6:6:5 of 1:2\:X).
-* Plots the number of correct predictions per jackpot for visual inspection.
+  * Distribution of common outcome ratios per pool (e.g., 6:6:5 of 1:2\:X).
+* Plots the number of correct predictions per pool for visual inspection.
 
 ---
 
 ## 📊 Sample Output
 
-**From analysis of 186 jackpots (total 3,162 games):**
+**From analysis of 186 pools (total 3,162 games):**
 
 * **Correct Prediction Distribution (out of 17):**
 
@@ -59,10 +59,10 @@ The analysis includes parsing historical data, transforming raw match outcomes i
 
 * **Standard Deviation of Correct Predictions:** `2.17`
 
-* **Most Common 1:2\:X Ratios (per 17-game jackpot):**
+* **Most Common 1:2\:X Ratios (per 17-game pool):**
 
-  * 11 jackpots had ratio 6:6:5
-  * 9 jackpots had ratios 7:5:5, 8:5:4, 7:6:4
+  * 11 groups of games had ratio 6:6:5
+  * 9 groups of games had ratios 7:5:5, 8:5:4, 7:6:4
   * ... (continued in full analysis)
 
 ---
@@ -91,7 +91,7 @@ pip install -r requirements.txt
 
 ## 🚀 How to Run
 
-1. Place the `soccerplatform-mega-jackpot-history-2016-2022.txt` file in your project directory.
+1. Place the `game-history-2016-2022.txt` file in your project directory.
 2. Run `data_download.py` to download and store parsed data.
 3. Save the data (e.g., in a `shelve` file or pickle format).
 4. Run `data_analysis.py` to analyze and visualize the data.
@@ -100,18 +100,12 @@ pip install -r requirements.txt
 
 ## 🧠 Insights
 
-This project helps uncover statistical regularities in soccer betting pools. By analyzing past jackpot outcomes, one can investigate:
+This project helps uncover statistical regularities in game pools. By analyzing past pool outcomes, one can investigate:
 
 * The likelihood of each outcome type.
-* How often jackpots contain evenly distributed outcomes.
+* How often game groups contain evenly distributed outcomes.
 * Predictive performance metrics of historical forecasts.
 * The overall ratio and modal frequency of the 1:2:X ratios
-
----
-
-## 📌 Disclaimer
-
-This project is for educational and analytical purposes only. It does not offer betting advice or guarantees regarding future outcomes.
 
 ---
 
