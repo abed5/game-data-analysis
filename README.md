@@ -1,4 +1,4 @@
-# Analysis of 17-Game Soccer Pool Outcomes
+# Analysis of 17-Game Pool Outcomes
 
 This Python project analyzes historical game pool outcomes. It specifically focuses on evaluating the predictive performance and statistical distribution of results for 17-game betting pools spanning from 2016 to 2022.
 
